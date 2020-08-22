@@ -2,10 +2,10 @@
     width: 100%;
     min-height: 100vh;
     font-family: 'Exo', Helvetica, sans-serif;
-    background: url('../img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background:  url('../img/shadow.png'), url('../img/background.jpg');
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%, 50% 50%;
 
     display: flex;
     justify-content: center;
