@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed the Cat</title>
+  <link rel="SHORTCUT ICON" href="./img/favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+  <div class="wrapper-flex">
+    <div class="cat">
+      <div class="container cat__container">
+        <div class="cat__content">
+            <h1 class="cat__title">Ты сегодня покормил кота?</h1>
+
+            <div class="cards-line">
+
+              <div class="item" data-item="0">
+  
+                <div class="item__body" id="item-body" data-body="0">
+  
+                  <div class="item__text">
+
+                    <div class="item__title" id="item-title">
+                      <p data-item-state="default">Сказачное заморское яство</p>
+                      <p class="item__title_pink" data-item-state="chosen">Котэ не одобряет?</p>
+                    </div>
+
+                    <h2 class="item__name">Нямушка</h2>
+                    <h5 class="item__description">с фуа-гра</h5>
+                    <p class="item__note"><b>10</b> порций<br>
+                      мышь в подарок
+                    </p>
+                  </div>
+  
+                  <div class="item__cat">
+                    <div id="cat-image"></div>
+                  </div>
+                  
+                  <div class="item__quantity">
+                    <p class="item__mass">0,5</p>
+                    <p class="item__value">кг</p>
+                  </div>
+                </div>
+  
+                <div class="item__footer" id="item-footer">
+                  <p class="active" data-item-state="default">Чего сидишь? Порадуй котэ, <a href="#6" data-buy-link="0">купи.</a></p>
+                  <p data-item-state="chosen">Печень утки сварная с артишоками.</p>
+                  <p data-item-state="disabled">Печалька, с фуа-гра закончился.</p>
+                </div>
+  
+              </div>
+
+              <div class="item" data-item="1">
+  
+                <div class="item__body" id="item-body" data-body="1">
+  
+                  <div class="item__text">
+                    <div class="item__title" id="item-title">
+                      <p data-item-state="default">Сказачное заморское яство</p>
+                      <p class="item__title_pink" data-item-state="chosen">Котэ не одобряет?</p>
+                    </div>
+                    <h2 class="item__name">Нямушка</h2>
+                    <h5 class="item__description">с рыбой</h5>
+                    <p class="item__note"><b>40</b> порций<br>
+                      <b>2</b> мыши в подарок<br>
+                    </p>
+                  </div>
+  
+                  <div class="item__cat">
+                    <div id="cat-image"></div>
+                  </div>
+                  
+                  <div class="item__quantity">
+                    <p class="item__mass">2</p>
+                    <p class="item__value">кг</p>
+                  </div>
+                </div>
+  
+                <div class="item__footer" id="item-footer">
+                  <p class="active" data-item-state="default">
+                    Чего сидишь? Порадуй котэ, <a href="#" data-buy-link="1">купи.</a>
+                  </p>
+                  <p data-item-state="chosen">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+                  <p data-item-state="disabled">Печалька, с рыбой закончился.</p>
+                </div>
+  
+              </div>
+
+              <div class="item disabled" data-item="2">
+  
+                <div class="item__body" id="item-body" data-body="2">
+  
+                  <div class="item__text">
+                    <div class="item__title" id="item-title">
+                      <p data-item-state="default">Сказачное заморское яство</p>
+                      <p class="item__title_pink" data-item-state="chosen">Котэ не одобряет?</p>
+                    </div>
+                    <h2 class="item__name">Нямушка</h2>
+                    <h5 class="item__description">с курой</h5>
+                    <p class="item__note"><b>100</b> порций<br>
+                      <b>5</b> мышей в подарок<br>
+                      заказчик доволен
+                    </p>
+                  </div>
+  
+                  <div class="item__cat">
+                    <div id="cat-image"></div>
+                  </div>
+                  
+                  <div class="item__quantity">
+                    <p class="item__mass">5</p>
+                    <p class="item__value">кг</p>
+                  </div>
+                </div>
+  
+                <div class="item__footer" id="item-footer">
+                  <p class="active" data-item-state="default">
+                    Чего сидишь? Порадуй котэ, <a href="#" data-buy-link="2">купи.</a>
+                  </p>
+                  <p data-item-state="chosen">Филе из цыплят с трюфелями в бульоне.</p>
+                  <p data-item-state="disabled">Печалька, с курой закончился.</p>
+                </div>
+  
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="./js/polyfill.js"></script>
+<script src="./js/mainBabel.js"></script>
+</body>
+</html>

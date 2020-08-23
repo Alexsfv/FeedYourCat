@@ -1,0 +1,16 @@
+//image caching
+.cat {
+    &__content::before {
+        content: '';
+        display: none;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        z-index: -1000;
+
+        background: url('../img/chosen-bg.png'),
+        url('../img/chosen-hover-bg.png'),
+        url('../img/default-bg.png'),
+        url('../img/default-hover-bg.png');
+    }
+}
