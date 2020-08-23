@@ -42,19 +42,13 @@
 .item {   
     font-family: 'Trebushet', Helvetica, sans-serif;
     margin: 0 10px;
-<<<<<<< HEAD
     max-width: 320px;
-=======
->>>>>>> 3af91d3560fd05e654426c47844bf1a4b3f5a409
 
     &__body {
         position: relative;
         width: 320px;
         min-height: 480px;
-<<<<<<< HEAD
         margin: 0 auto;
-=======
->>>>>>> 3af91d3560fd05e654426c47844bf1a4b3f5a409
         padding: 20px 50px;
 
         background: url('../img/default-bg.png');
@@ -339,24 +333,12 @@
     }
 
     .item {   
-<<<<<<< HEAD
         max-width: 290px;
         margin: 15px 0;
 
         &__body {
             width: 290px;
             padding: 20px 35px;
-=======
-        margin: 15px 0;
-
-        &__body {
-            position: relative;
-            min-width: 290px;
-            width: auto;
-            min-height: 480px;
-            padding: 20px 35px;
-
->>>>>>> 3af91d3560fd05e654426c47844bf1a4b3f5a409
         }
 
         &__name {
