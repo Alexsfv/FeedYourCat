@@ -1,7 +1,7 @@
 (function() {
     const buyLinks = $all('[data-buy-link]');
     const allItems = $all('[data-item]');
-    const itemsBody = $all(':not(.disabled)[data-item] #item-body');
+    const itemsBody = $all(':not(.disabled)[data-item] [data-item-element="body"]');
 
     setDefaultState(allItems);
 
@@ -17,14 +17,13 @@
 
     function addHoverState(item) {
         item.classList.add('hover');
-        const itemTitle = $(`[data-item="${item.dataset.item}"] #item-title`);
+        const itemTitle = $('[data-item-element="title"]', item);
         const titleTexts = itemTitle.children;
-
         editText(titleTexts, 'chosen');
     }
 
     function changeTextFooter(item, state) {
-        const footer = item.children['item-footer'];
+        const footer = $('[data-item-element="footer"]', item);
         const footerTexts = footer.children;
         editText(footerTexts, state);
     }
@@ -50,16 +49,15 @@
     }
 
     function removeHoverState(item) {
-        const itemTitle = $(`[data-item="${item.dataset.item}"] #item-title`);
+        const itemTitle = $('[data-item-element="title"]', item);
         const titleTexts = itemTitle.children;
-
         item.classList.remove('hover');
         editText(titleTexts, 'default');
     }
     
     function setDefaultState(items) {
         items.forEach((item) => {
-            const body = item.children['item-body'];
+            const body = $('[data-item-element="body"]', item);
             if (item.classList.contains('disabled')) {
                 changeTextFooter(item, 'disabled');
             }
@@ -69,8 +67,7 @@
     function setStateByBody(e) {
         const indexItem = e.currentTarget.dataset.body;
         const item = $(`[data-item="${indexItem}"]`);
-        const bodyItem = item.children['item-body'];
-
+        const body = $('[data-item-element="body"]', item);
         const isChosen = item.classList.contains('chosen');
         const isDisabled = item.classList.contains('disabled');
 
@@ -94,11 +91,11 @@
         addHoverState(item);
     }
 
-    function $(selector) {
-        return document.querySelector(selector);
+    function $(selector, parent = document) {
+        return parent.querySelector(selector);
     }
 
-    function $all(selector) {
-        return document.querySelectorAll(selector);
+    function $all(selector, parent = document) {
+        return parent.querySelectorAll(selector);
     }
 })();
